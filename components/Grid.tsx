@@ -1,6 +1,14 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { gridItems } from "@/data";
+
+const GridGlobe = dynamic(
+  () => import("./ui/GridGlobe").then((mod) => mod.GridGlobe),
+  { ssr: false }
+);
 
 const Grid = () => {
   return (
@@ -27,6 +35,8 @@ const Grid = () => {
               imgClassName={imgClassName}
               titleClassName={titleClassName}
               spareImg={spareImg}
+              // Ensure GridGlobe only renders dynamically
+              renderGlobe={id === 2 ? <GridGlobe /> : null}
             />
           )
         )}
