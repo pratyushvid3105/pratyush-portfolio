@@ -10,6 +10,15 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        child_process: false,
+        fs: false,
+      };
+    }
+    return config;
+  },
 };
 
 export default withSentryConfig(nextConfig, {
