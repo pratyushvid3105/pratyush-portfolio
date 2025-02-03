@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "target": "es5",
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
