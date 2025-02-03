@@ -12,6 +12,8 @@
   "dependencies": {
     "@loaders.gl/core": "^4.3.3",
     "@loaders.gl/gltf": "^4.3.3",
+    "@opentelemetry/core": "^1.29.0",
+    "@opentelemetry/instrumentation": "^0.56.0",
     "@react-icons/all-files": "^4.1.0",
     "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
