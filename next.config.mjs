@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   images: {
-    unoptimized: true, // Required for static exports
+    unoptimized: true,
   },
   webpack: (config) => {
     config.module.rules.push({
@@ -16,20 +16,18 @@ const nextConfig = {
     });
     return config;
   },
-  // Remove experimental config
   typescript: {
     ignoreBuildErrors: false,
   },
 };
 
-// Only enable Sentry in non-static environments
-const sentryWebpackPluginOptions = process.env.SENTRY_AUTH_TOKEN
+const sentryWebpackPluginOptions = process.env.NEXT_PUBLIC_SENTRY_AUTH_TOKEN
   ? {
       silent: true,
       hideSourceMaps: true,
     }
   : null;
 
-export default process.env.SENTRY_AUTH_TOKEN
+export default process.env.NEXT_PUBLIC_SENTRY_AUTH_TOKEN
   ? withSentryConfig(nextConfig, sentryWebpackPluginOptions)
   : nextConfig;
