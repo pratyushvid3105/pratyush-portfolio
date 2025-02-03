@@ -4,7 +4,7 @@ import { withSentryConfig } from "@sentry/nextjs";
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: "standalone", // Add this line for static exports
+  output: "export",
   experimental: {
     instrumentationHook: true,
   },
