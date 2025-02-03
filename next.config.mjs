@@ -3,37 +3,33 @@ import { withSentryConfig } from "@sentry/nextjs";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   output: "export",
-  experimental: {
-    instrumentationHook: true,
+  images: {
+    unoptimized: true, // Required for static exports
   },
-  typescript: {
-    ignoreBuildErrors: false,
-  },
-  webpack: (config, { isServer }) => {
-    // Add module resolution fix
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.m?js/,
       resolve: {
         fullySpecified: false,
       },
     });
-
-    if (!isServer) {
-      config.resolve.fallback = {
-        child_process: false,
-        fs: false,
-      };
-    }
     return config;
+  },
+  // Remove experimental config
+  typescript: {
+    ignoreBuildErrors: false,
   },
 };
 
-export default withSentryConfig(nextConfig, {
-  silent: !process.env.CI,
-  widenClientFileUpload: true,
-  hideSourceMaps: true,
-  disableLogger: true,
-  automaticVercelMonitors: true,
-});
+// Only enable Sentry in non-static environments
+const sentryWebpackPluginOptions = process.env.SENTRY_AUTH_TOKEN
+  ? {
+      silent: true,
+      hideSourceMaps: true,
+    }
+  : null;
+
+export default process.env.SENTRY_AUTH_TOKEN
+  ? withSentryConfig(nextConfig, sentryWebpackPluginOptions)
+  : nextConfig;
