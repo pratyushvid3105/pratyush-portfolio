@@ -35,7 +35,6 @@ const Grid = () => {
               imgClassName={imgClassName}
               titleClassName={titleClassName}
               spareImg={spareImg}
-              // Ensure GridGlobe only renders dynamically
               renderGlobe={id === 2 ? <GridGlobe /> : null}
             />
           )
