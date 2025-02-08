@@ -27,11 +27,12 @@ const Hero = () => {
             Dynamic Web Magic with Next.js
           </h2>
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Transforming Ideas into Seamless User Experiences"
             className="text-center text-10 md:text-5xl lg:text-6xl"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Pratyush, a Software Engineer based in India.
+            Hi, I&apos;m Pratyush, a Software Engineer based in India who loves
+            building seamless, high-performance web experiences.
           </p>
           <a href="#about">
             <MagicButton
