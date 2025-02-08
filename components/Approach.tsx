@@ -12,11 +12,9 @@ const Approach = () => {
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning & Strategy"
+          title="Understanding & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          description="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          description="Before writing a single line of code, we discuss your vision. We'll define the key objectives, user flow, and necessary tech stack. Whether it's a SaaS dashboard or an interactive UI, planning is key!"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -24,9 +22,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Code, Build & Iterate"
           icon={<AceternityIcon order="Phase 2" />}
-          description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+          description="Time to bring ideas to life! With a cup of coffee and a well-structured plan, I dive into coding, focusing on seamless user experience, smooth interactions, and performance that feels effortless. You'll get regular updates along the way!"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -39,9 +37,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development and Launch"
+          title="Deploy & Optimize"
           icon={<AceternityIcon order="Phase 3" />}
-          description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+          description="Once everything is tested and fine-tuned, it's launch time! I ensure smooth deployment, optimal performance, and integrate monitoring tools to keep things running flawlessly."
         >
           <CanvasRevealEffect
             animationSpeed={3}

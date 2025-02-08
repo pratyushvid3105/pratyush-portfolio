@@ -10,16 +10,16 @@ const Footer = () => {
     <footer className="w-full pb-10 mb-[100px] md:mb-5" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your </span>digital
-          presence to the next level?
+          Let’s build something <span className="text-purple">awesome </span>{" "}
+          together.
         </h1>
         <p className="text-white-200 md:mt-10 my-5">
-          Reach out to me today and let&apos;s discuss how I can help your
-          goals.
+          Have an idea or a project in mind? Drop me a message, and let’s turn
+          it into reality.
         </p>
         <a href="mailto:pratyush310599@gmail.com">
           <MagicButton
-            title="Let's get in touch"
+            title="Let's connect"
             icon={<FaLocationArrow />}
             position="right"
           />
