@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Pratyush's Portfolio",
   description:
     "Simple and Smooth Portfolio showcasing my skills, projects, and professional journey",
+  icons: {
+    icon: "/pv-logo.webp",
+  },
 };
 
 export default function RootLayout({
