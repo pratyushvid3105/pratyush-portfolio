@@ -40,21 +40,12 @@ export const metadata: Metadata = {
     siteName: "Pratyush Vidyarthi Portfolio",
     images: [
       {
-        url: "https://pratyushv.com/logo.png",
+        url: "https://pratyushv.com/logo-512.png",
         width: 1200,
         height: 630,
         alt: "Pratyush Vidyarthi Portfolio Logo",
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Pratyush Vidyarthi | Full-Stack Developer",
-    description:
-      "Explore my technical projects, professional journey, and software engineering expertise.",
-    site: "@yourTwitterHandle",
-    creator: "@yourTwitterHandle",
-    images: ["https://pratyushv.com/logo.png"],
   },
 };
 
