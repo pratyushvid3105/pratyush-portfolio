@@ -8,13 +8,13 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        My <span className="text-purple">work approach</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Understanding & Strategy"
+          title="Analyzing & Strategizing"
           icon={<AceternityIcon order="Phase 1" />}
-          description="Before writing a single line of code, we discuss your vision. We'll define the key objectives, user flow, and necessary tech stack. Whether it's a SaaS dashboard or an interactive UI, planning is key!"
+          description="I begin by understanding the project requirements, identifying potential challenges, and defining a clear roadmap. Collaborating with teams to align on goals and technical needs ensures a smooth development process."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -22,9 +22,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Code, Build & Iterate"
+          title="Developing & Refining"
           icon={<AceternityIcon order="Phase 2" />}
-          description="Time to bring ideas to life! With a cup of coffee and a well-structured plan, I dive into coding, focusing on seamless user experience, smooth interactions, and performance that feels effortless. You'll get regular updates along the way!"
+          description="With a structured plan in place, I focus on clean, scalable code, ensuring seamless user experience and performance. I thrive in agile environments, iterating based on feedback and optimizing for efficiency."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -37,9 +37,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Deploy & Optimize"
+          title="Deploying & Continuous Improvement"
           icon={<AceternityIcon order="Phase 3" />}
-          description="Once everything is tested and fine-tuned, it's launch time! I ensure smooth deployment, optimal performance, and integrate monitoring tools to keep things running flawlessly."
+          description="I ensure smooth deployments, monitor performance, and proactively refine features based on analytics and user feedback. I stay updated with industry trends to bring the best solutions to the table."
         >
           <CanvasRevealEffect
             animationSpeed={3}
